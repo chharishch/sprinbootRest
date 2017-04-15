@@ -17,8 +17,8 @@ public class OrderService {
 	public List<Order> getAllOrder(){
 		return order; 
 	}
-	public  Order getOrder(String id) {
+	public  String getOrder(String id) {
 		// TODO Auto-generated method stub
-		return order.stream().filter(t -> t.getOrder_id().equals(id)).findFirst().get();
+		return order.stream().filter(t -> t.getOrder_id().equals(id)).findFirst().get().getOrder_status();
 	}
 	}

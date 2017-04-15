@@ -18,8 +18,13 @@ public class CustomerController {
 	private OrderService orderService;
 
 	@RequestMapping("/customers/{id}")
-	public Customers getCustomers(@PathVariable String id){
+	public String getCustomers(@PathVariable String id){
 		return customerService.getCustomers(id);
+
+	}
+	@RequestMapping("/customer/{id}/{pswd}")
+	public String validateCustomer(@PathVariable String id,@PathVariable String pswd){
+		return customerService.validateCustomer(id, pswd);
 
 	}
 	@RequestMapping("/customers")
@@ -32,7 +37,7 @@ public class CustomerController {
 		return orderService.getAllOrder(); 
 	}
 	@RequestMapping("/orders/{id}")
-	public  Order getOrder(@PathVariable String id) {
+	public  String getOrder(@PathVariable String id) {
 		// TODO Auto-generated method stub
 		return orderService.getOrder(id);
 	}
