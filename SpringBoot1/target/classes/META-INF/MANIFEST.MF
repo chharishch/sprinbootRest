@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: Sample Spring Boot
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: harish
+Built-By: sajja
 Implementation-Vendor-Id: SpringBootSample
 Build-Jdk: 1.8.0_121
 Implementation-URL: http://projects.spring.io/spring-boot/SpringBoot1/

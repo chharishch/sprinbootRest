@@ -6,17 +6,37 @@ public class Customers {
 	private String Customer_id;
 	private String Customer_name;
 	private String order;
+	private String Password;
 	
 	
+	
+
+	public String getOrder() {
+		return order;
+	}
+
+	public void setOrder(String order) {
+		this.order = order;
+	}
+
+	public String getPassword() {
+		return Password;
+	}
+
+	public void setPassword(String password) {
+		Password = password;
+	}
+
 	public Customers() {
 		
 	}
 	
-	public Customers(String customer_id, String customer_name, String order) {
+	public Customers(String customer_id, String customer_name, String order, String password) {
 		super();
 		Customer_id = customer_id;
 		Customer_name = customer_name;
 		this.order = order;
+		Password=password;
 	}
 	public String getId(){
 		return Customer_id;
