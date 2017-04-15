@@ -25,7 +25,7 @@ public class CustomerService {
 			System.out.println(customers.get(i).getCustomer_id());
 			if(id.toString().equals(customers.get(i).getCustomer_id().toString())){
 				if(pswd.toString().equals(customers.get(i).getPassword())){
-					s=customers.stream().filter(t -> t.getId().equals(id)).findFirst().get().getCustomer_name();
+					s="Customer Name :"+customers.stream().filter(t -> t.getId().equals(id)).findFirst().get().getCustomer_name()+"\n"+"Customer Order :"+customers.stream().filter(t -> t.getId().equals(id)).findFirst().get().getOrder();
 					break;
 				}
 			}
